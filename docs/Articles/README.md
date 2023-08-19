@@ -1,8 +1,9 @@
 ---
-title: Webpack 核心概念
+heroText: Webpack 核心概念
 description: "webpack 是一個靜態模組打包工具，它的功用是把前端開發時用到的諸多靜態資源（如 JavaScript、CSS 和圖片等檔案）進行打包(bundle)。"
-sidebar: auto
 ---
+
+# Webpack 核心基礎
 
 每個 `webpack.config.js` 都會有以下的架構：
 

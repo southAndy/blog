@@ -3,25 +3,15 @@ module.exports = {
   description: "try to write some articles", //關於首頁的描述
   themeConfig: {
     nav: [
-      { text: "about", link: "/about/" },
+      { text: "About", link: "/About/" },
 
       {
-        text: "guide",
-        link: "/guide/",
+        text: "Articles",
+        link: "/Articles/",
       },
     ],
-    sidebar: [
-      {
-        title: "webpack",
-        path: "/webpack/",
-        collapsable: false,
-      },
-      {
-        title: "vuepress",
-        path: "/vuepress/",
-        collapsable: false,
-        children: ["/"],
-      },
-    ],
+    sidebar: {
+      "/Articles/": ["core"],
+    },
   },
 };
