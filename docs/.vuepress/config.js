@@ -11,7 +11,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/Articles/": ["core"],
+      "/Articles/": ["core", "vuex-basic"],
     },
   },
 };
