@@ -1,3 +1,5 @@
+const autoSideBar = require("../../utils/autoCreateSidebar");
+
 module.exports = {
   title: "Andy walking", //網站名稱
   description: "try to write some articles", //關於首頁的描述
@@ -10,8 +12,13 @@ module.exports = {
         link: "/Articles/",
       },
     ],
-    sidebar: {
-      "/Articles/": ["core", "vuex-basic"],
-    },
   },
+  plugins: [
+    [
+      "vuepress-plugin-auto-sidebar",
+      {
+        // options
+      },
+    ],
+  ],
 };
