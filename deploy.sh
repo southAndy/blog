@@ -15,4 +15,4 @@ git add -A
 git commit -m 'deploy'
 
 # 部署到 github pages
-git push -f git@github.com:southAndy/blog.git master:gh-pages
+git push -f git@github.com:southAndy/blog.git main:gh-pages
