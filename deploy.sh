@@ -8,7 +8,7 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # 當你有專屬 domain 的設定
-# echo andy-walk.dev
+echo andy-walk.dev
 
 git init
 git add -A
