@@ -13,7 +13,7 @@ heroText: "嗨！ 我是安迪"
     <div class='avatar'>
         <img src="../public/IMG_0893.jpg"/>
     </div>
-    <p>
+    <p class="introduce">
     嗨，我是北漂的安迪<br/>努力在工作跟生活間平衡
     </p>
     </main>
@@ -52,5 +52,8 @@ heroText: "嗨！ 我是安迪"
     }
     .music{
         height:300px;
+    }
+    .introduce{
+        margin:0;
     }
 </style>
