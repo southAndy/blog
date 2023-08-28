@@ -4,11 +4,9 @@ module.exports = {
   base: "/blog/", //部署設定
   themeConfig: {
     nav: [
-      { text: "About", link: "/About/" },
-
       {
-        text: "Articles",
-        link: "/Articles/",
+        text: "前端筆記",
+        link: "/Frontend/",
       },
     ],
   },
