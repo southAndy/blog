@@ -1,5 +1,5 @@
 ---
-title: VUE
+title: Vue
 ---
 
 ## vuex 基礎
@@ -464,3 +464,259 @@ action:{
 ### 參考資料
 
 1. [Vuex-doc](https://vuex.vuejs.org/)
+
+---
+
+## props
+
+### 定義方式
+
+```javascript=
+
+//可以是array,obj
+props:{title:String,}
+props:['title']
+```
+
+#### prop casing
+
+HTML 屬性名稱不區分大小寫，在 script 中用小駝峰命名法引入的 props，在 HTML template 上需要使用 kebab-cased 的寫法
+
+```javascript=
+// camelCase in JavaScript
+  props: ['postTitle'],
+
+ <!-- kebab-case in HTML -->
+<blog-post post-title="hello!"></blog-post>
+```
+
+### 單向資料流
+
+- 資料一般定義在父元件，子元件只做接收和顯示資料
+- 父元件的資料一更新，子元件內所有使用的 props 會自動更新
+- 不在子元件內修改 props ( console 會出現警告)
+
+---
+
+## v-model
+
+### 在 `v-model` 出現前：
+
+在網頁世界中，取得欄位內容(ex :`input`)是重要、常見的功能，在原生 _JavaScript_，你會需要透過：
+
+1. 選到元素： `document.querySelector()`
+2. 監聽元素的行為 `addEventListener()`
+
+```js
+//選到元素
+const inputEle = document.querySelector(".test");
+
+//監聽元素的行為
+inputEle.addEventListener("input", (e) => {
+  console.log("inputing", e.target.value);
+});
+```
+
+~~是不是很難用~~，那我們來看看框架的好了
+
+```js
+<input
+type='text'
+:value='detectValue'
+@input='event => detectValue = event.target.value'
+/>
+```
+
+上面的行為其實就是：**監聽使用者在表單輸入的值，拿來更新`value` **，不過你還有更簡潔的方法做到這件事，就是使用 `v-model`：
+
+```js
+<input type="text" v-model="detectValue" />
+```
+
+所以我們可以知道 `v-model` 的重要功能：做到同步更新表單內的值。
+
+<br>
+
+### 關於 v-model
+
+你可以先知道：
+
+1. 它能用在 `input` ,`select`,`textarea`等元素上
+2. 當你使用 `v-model` 監控 `input` 時，內部設定的 `value` 會被無視
+
+   > `<input value='initial'(not work)  v-model='test'/>`
+
+3. 它在不同元素、屬性下，**==會建議搭配不同事件==（ex: `change`, `input`）**
+
+**`input type='checkbox'`**
+當你 `v-model` 綁定的是一個字串時：
+
+1. 回傳值(default)：`true` / `false`，
+   > 可以透過 `true/fasle-value` 自定義回傳值
+
+```js
+<template>
+	<input type='checkbox'  v-model='detect'/>
+</template>
+<script>
+	export default {
+		name:'sample',
+		data(){
+			return{
+			detect:'andy'
+			}
+		}
+	}
+</script>
+```
+
+值可以透過 `true-value` 自定義內容，或是**加上 `v-bind` 產生動態的自定義內容**
+
+```js
+<template>
+	<input true-value='customize' type='checkbox'  v-model='detect'/>
+	<input :true-value='dynamicCustomize' type='checkbox'  v-model='detect'/>
+</template>
+<script>
+	export default {
+		name:'sample',
+		data(){return{
+			detect:'',
+			dynamicCustomize:'anyThing'
+		}}
+	}
+</script>
+```
+
+> 需要注意： `true/false-value` 在`v-model` 監聽的變數為`[]` 時，優先度低於預設 `value`
+
+當你綁定一個`[]`
+
+1. 使用單一變數作為多個輸入欄位的監測變數如下：
+2. modelValue 的原始型別為 `[]`
+3. 回傳值不再是 `true/false`
+
+```js
+<template>
+
+	<input type='checkbox' value='andy' v-model='detect'/>
+	<input type='checkbox' value='rex'  v-model='detect'/>
+	<input type='checkbox' value='angela' v-model='detect'/>
+	<input type='checkbox' value='wendy' v-model='detect'/>
+</template>
+<script>
+	export default {
+		name:'sample',
+		data(){return{
+			detect:[],//當你全選時會是：['andy','rex'..etc]
+		}}
+	}
+</script>
+```
+
+`select`
+
+### 用 v-model 監聽元件
+
+https://ithelp.ithome.com.tw/articles/10268187
+
+v-model + computed(get + set)
+今天我們希望對 `v-model` 監聽的值多做一些處理，你可能會想到，把它拆分成兩個部分
+
+```js
+	<InputElement :modelValue='selected' @update:modelValue=handler />
+```
+
+但這樣有兩個可改進的部分：
+
+1. 可讀性
+2. 要多寫一個`methods`
+
+---
+
+## 操作 `slot` 插槽
+
+在開始之前，先來回顧一下上面已知道的
+
+> 因為編譯作用域的關係，父元件無法影響子元件的內容
+
+`slot` 在官方文件稱為『插槽』，**讓你可以在元件內產生一個空間**，它有以下特色：
+
+1. 內容是透過父元件傳入子元件內。
+2. **傳入內容優先度大於 `slot` 的預設內容**
+
+### 不具名插槽
+
+```js
+
+```
+
+<br>
+
+### 具名插槽
+
+你有想過，當今天元件內插槽數量超過一個時如何正確插入嗎？這時候就需要幫插槽命名來產生所謂的**具名插槽**。例如你今天分別想將不同內容插入 header / main / footer 三個不同內的 slot
+
+**命名方式**：
+在 slot 標籤內加上 `name` 的屬性
+
+```html
+//子元件結構
+<template>
+  <header>
+    <slot name="header">i am default header</slot>
+  </header>
+  <main>
+    <slot name="main">'i am default main'</slot>
+  </main>
+</template>
+```
+
+**傳入方式** ：
+在父層透過 `v-slot:[name]` 來指定要傳入的插槽位置，例如想隨意加入內容到 header 的 slot 內：
+
+```html
+	<custom-component>
+		<template v-slot:'header'>
+		... 你想加入的內容
+		</template>
+	</custom-component>
+```
+
+> 注意：
+>
+> 1.  **具名插槽 `v-slot` 一定要搭配 `<template>` 使用**
+> 2.  `v-slot:["name"]` 可以簡寫為`#[name]`
+> 3.  如果 `slot` 沒有命名，預設會將它名稱為 `default`
+
+<br>
+
+#### 新增並取得子元件屬性
+
+除了`name` 以外， `slot` 元件上還能加上其他自定義屬性，可以提供給父元件取用
+
+```js
+<slot name="son" forFather="87" :forTest="testText"></slot>
+```
+
+取用的方法就是在 `v-slot` 後面加上 `={[屬性名稱]}`
+
+```js
+<template #son={[屬性名稱1,屬性名稱2]}>
+	{{屬性名稱}} //87
+</template>
+```
+
+### $slots
+
+在子元件，可以透過
+
+```js
+console.log(this.$slots["name"]); //印出父元件透過slot傳來的資訊
+```
+
+### 動態切換插槽
+
+`v-slot:[variabel]`
+
+透過變換 `variable` 來調整顯示內容

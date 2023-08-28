@@ -1,5 +1,5 @@
 ---
-title: ESLINT
+title: Eslint
 date: "2023-04-18"
 ---
 

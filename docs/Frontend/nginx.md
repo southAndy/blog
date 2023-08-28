@@ -1,5 +1,5 @@
 ---
-title: nginx
+title: Nginx
 date: "2023-05-27"
 ---
 
