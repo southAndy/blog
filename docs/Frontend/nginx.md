@@ -1,17 +1,13 @@
 ---
-title: nginx 基本概念
+title: nginx
 date: "2023-05-27"
 ---
 
-# nginx 基本概念
-
-## 認識 nginx
+## nginx 基本概念
 
 nginx 是常見的 web-server ，其他還有**Apache**， 讓你能在本地端（local）產生一個伺服器。
 
----
-
-## nginx 配置設定
+### nginx 配置設定
 
 官方文件是這樣說的：
 
@@ -55,7 +51,7 @@ location / path {
 
 ---
 
-## 操作 nginx
+### 操作 nginx
 
 > To start nginx, run the executable file. Once nginx is started, it can be controlled by invoking the executable with the -s parameter
 
@@ -79,7 +75,7 @@ nginx -s [option]
 
 ---
 
-## 參考資料
+### 參考資料
 
 1. https://ithelp.ithome.com.tw/articles/10280441
 2. https://zh.wikipedia.org/zh-tw/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86

@@ -1,10 +1,8 @@
 ---
-title: Vuex基礎
-date: "2023-01-11"
-description: "隨著你的專案規模改變，資料也會有需要"
+title: VUE
 ---
 
-# Vuex 基礎
+## vuex 基礎
 
 根據文件的概念，vuex 定位是用來管理**全域資料、全域邏輯**
 
@@ -463,6 +461,6 @@ action:{
 
 ---
 
-## 參考資料
+### 參考資料
 
 1. [Vuex-doc](https://vuex.vuejs.org/)
