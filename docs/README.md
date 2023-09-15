@@ -17,19 +17,23 @@ heroText: "嗨！ 我是安迪"
     嗨，我是北漂的安迪<br/>努力在工作跟生活間平衡
     </p>
     </main>
-    <section class="music">
-    <h3>我最近在聽 🎧</h3>
-    <iframe
-    title="Spotify Embed: Recommendation Playlist "
-    src='https://open.spotify.com/embed/playlist/04PsQ51xO5tUZe6FDsyhJ2?utm_source=generator&theme=0'
-    width="100%"
-    height="100%"
-    frameBorder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-    />
-    </section>
+    
 </main>
+<article>
+    
+</article>
+<section class="music">
+        <h3>我最近在聽 🎧</h3>
+        <iframe
+        title="Spotify Embed: Recommendation Playlist "
+        src='https://open.spotify.com/embed/playlist/04PsQ51xO5tUZe6FDsyhJ2?utm_source=generator&theme=0'
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        />
+    </section>
 
 <style>
     #main-title {
@@ -49,11 +53,24 @@ heroText: "嗨！ 我是安迪"
     .personal{
         display:flex;
         gap:10px;
+        
     }
     .music{
         height:300px;
     }
     .introduce{
         margin:0;
+    }
+    @media screen and (max-width: 576px){
+        .personal{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+    @media screen and (max-width: 576px){
+        .introduce{
+            font-size:13px;
+            padding:0 20px; 
+        }
     }
 </style>
