@@ -6,7 +6,11 @@ module.exports = {
     nav: [
       {
         text: "前端筆記",
-        link: "/Frontend/",
+        link: "/frontend/",
+      },
+      {
+        text: "後端筆記",
+        link: "/backend/",
       },
     ],
   },
