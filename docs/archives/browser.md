@@ -79,5 +79,3 @@ date: "2023/12/20"
 > 以下以 Google 搜尋 flag 為例：
 >
 > ![](https://i.imgur.com/d8g3b5s.png)
-
-再進一步細看：
