@@ -1,3 +1,3 @@
 ---
-heroText: 關於我
+title: 關於我
 ---
