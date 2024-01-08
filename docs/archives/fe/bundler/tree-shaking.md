@@ -2,6 +2,8 @@
 title: Tree Shaking
 ---
 
+# Tree Shaking
+
 引用官網的內文：
 
 > It relies on the [static structure](http://exploringjs.com/es6/ch_modules.html#static-module-structure) of ES2015 module syntax
@@ -80,8 +82,6 @@ export let useToolList = {
   use2: useTool2,
 };
 ```
-
-### 如何讓特定檔案不被 tree-shaking
 
 ---
 
