@@ -1,12 +1,10 @@
 <script setup>
 import Header from "../template/Header.vue";
-import "prismjs/themes/prism.css";
 </script>
 
 <template>
   <div class="layout">
     <Header />
-    <Content> </Content>
   </div>
 </template>
 
