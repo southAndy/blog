@@ -4,11 +4,33 @@ module.exports = {
   base: "/", //根目錄的設定
   themeConfig: {
     displayAllHeaders: true,
+    search: false,
     nav: [
       {
-        text: "學習筆記",
-        link: "/codes/",
+        text: "前端",
+        link: "/archives/fe/",
+        items: [
+          { text: "打包", link: "/archives/fe/bundler/" },
+          { text: "Javascript", link: "/archives/fe/javascript" },
+        ],
       },
+      {
+        text: "後端",
+        link: "/archives/be/",
+      },
+      {
+        text: "其他文章",
+        link: "/archives/other/",
+      },
+      {
+        text: "關於我",
+        link: "/about/",
+      },
+      {
+        text: "Github",
+        link: "",
+      },
+      {},
     ],
   },
   plugins: {
