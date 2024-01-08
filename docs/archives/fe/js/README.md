@@ -1,14 +1,14 @@
 ---
-title: 比較 null 與 undefined
+title: 比較 null 與 undefined 差異
 ---
 
-## JavaScript types
+# Types
 
 ### 前言：為何我會想整理這篇筆記
 
 工作上在製作新功能時曾有遇到：**後端回傳資料及格式架構都錯**的情境，再次意識到型別理解的重要性，畢竟畫面資料錯了非常明顯，所以前端應該要設想各種錯誤情境去預防，而不是期待後端資料永遠不會有出錯的一天。
 
-## 型別有哪些
+### 型別有哪些
 
 參考 _ECMAScript Language Types_：
 

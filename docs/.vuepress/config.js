@@ -22,21 +22,13 @@ module.exports = {
           { text: "Nodejs", link: "/archives/be/nodejs/" },
           { text: "資料庫", link: "/archives/be/database/" },
           { text: "爬蟲", link: "/archives/be/crawler/" },
+          { text: "python", link: "/archives/be/python/" },
         ],
       },
       {
-        text: "其他文章",
+        text: "其他",
         link: "/archives/others/",
       },
-      {
-        text: "關於我",
-        link: "/about/",
-      },
-      {
-        text: "Github",
-        link: "",
-      },
-      {},
     ],
   },
   plugins: {
