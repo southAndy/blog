@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue | Andy walking</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="try to write some articles">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.6bbf80a7.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/37.129a7cf8.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.5a81c169.js"><link rel="prefetch" href="/assets/js/23.1a532dfa.js"><link rel="prefetch" href="/assets/js/24.e4cae997.js"><link rel="prefetch" href="/assets/js/25.01cc8187.js"><link rel="prefetch" href="/assets/js/26.30bea54f.js"><link rel="prefetch" href="/assets/js/27.99b715ff.js"><link rel="prefetch" href="/assets/js/28.ed24d7fb.js"><link rel="prefetch" href="/assets/js/29.55f9986e.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/30.d8a766cf.js"><link rel="prefetch" href="/assets/js/31.c5f0745b.js"><link rel="prefetch" href="/assets/js/32.9588f179.js"><link rel="prefetch" href="/assets/js/33.707322a4.js"><link rel="prefetch" href="/assets/js/34.a25d4ed9.js"><link rel="prefetch" href="/assets/js/35.2efcf8b4.js"><link rel="prefetch" href="/assets/js/36.bacece6e.js"><link rel="prefetch" href="/assets/js/38.617142bd.js"><link rel="prefetch" href="/assets/js/39.6aa441d2.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Andy walking</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vuejs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/archives/fe/vuejs/" aria-current="page" class="active sidebar-link">Vue</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vuex-基礎"><a href="#vuex-基礎" class="header-anchor">#</a> vuex 基礎</h2> <p>根據文件的概念，vuex 定位是用來管理<strong>全域資料、全域邏輯</strong></p> <blockquote><p>Vuex is a <strong>state management pattern + library</strong> for Vue.js applications.
+ref:https://vuex.vuejs.org/</p></blockquote> <br> <h3 id="全域的概念"><a href="#全域的概念" class="header-anchor">#</a> 全域的概念</h3> <p>簡單的概念說明就是：<strong>這個資料會被跨頁面使用</strong>，常見的「全域資料」如下：</p> <div class="language- extra-class"><pre class="language-text"><code>userID //使用者ID
+loginTime //登錄時間
+api-payload //帶給後端的payload
+API //從後端取回的資料
+</code></pre></div><hr> <h3 id="認識-vuex-資料存取原理"><a href="#認識-vuex-資料存取原理" class="header-anchor">#</a> 認識 Vuex 資料存取原理</h3> <p>當你想要取得一個存放在 <code>state</code> 內的 API 資料，你會經過下面的步驟：</p> <ol><li>元件內執行一個 <code>methods</code>，或是在生命週期時觸發 <code>actions</code></li> <li>執行後會傳<code>commit</code>到<code>Mutations</code> 由它更新<code>state</code>內的值</li> <li>當確認更新後，將變動的值賦予到<code>state</code>內的變數中</li> <li>回傳給元件</li></ol> <div style="border:1px solid black;margin-bottom:5px;"><img src="https://i.imgur.com/at5KuTP.png" style="width:100%;"></div> <hr> <h3 id="基本構造"><a href="#基本構造" class="header-anchor">#</a> 基本構造</h3> <p>我們可以用 vue 的架構去比喻，如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">//存放資料的地方 &gt; 如同vue的data</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//常用於計算，取得一個值 &gt; 如同computed</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>不同的是在 vue 本身，不論是<strong>同步</strong>及<strong>非同步</strong>的邏輯都可以在 <code>methods</code> 撰寫。但在 vuex 則被拆開去各別處理：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">//執行同步的邏輯</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//執行非同步的邏輯</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>在下面的部分會針對各架構介紹：</p> <hr> <h3 id="state"><a href="#state" class="header-anchor">#</a> State</h3> <p>如同前面提過的，存放在 Vuex 內的 <code>state</code> 都是==全域等級==的資料，那要如何使用呢？在這邊會分別介紹：</p> <ol><li><strong>元件取用</strong></li> <li><strong>Vuex 內部取用</strong></li></ol> <h4 id="元件取用"><a href="#元件取用" class="header-anchor">#</a> 元件取用</h4> <p>可以分為<strong>單一資料</strong>取出及<strong>多資料</strong>取用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//單一資料取法: 透過 this 去指向vuex</span>
+<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function-variable function">getVuexStore</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span><span class="token punctuation">[</span>stateName<span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//多筆資料取法: 透過 vuex 內建的 map 系列方法</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>mapState<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+
+<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token comment">//有三種取法,需注意參數必須為 state</span>
+	<span class="token comment">//1.使用箭頭函式取</span>
+	<span class="token function-variable function">localName</span><span class="token operator">:</span><span class="token parameter">state</span><span class="token operator">=&gt;</span>state<span class="token punctuation">.</span>stateName
+
+	<span class="token comment">//2.使用 string方式會指定對應state</span>
+	<span class="token literal-property property">aliasName</span><span class="token operator">:</span><span class="token string">'count'</span><span class="token punctuation">,</span> <span class="token comment">//'count' === state.count</span>
+
+	<span class="token comment">//3.一般函式（當你需要使用到 local-state時，避免this混亂使用）</span>
+	<span class="token function">count</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> state<span class="token punctuation">.</span>count <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>localName
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h4 id="vuex-內部取用"><a href="#vuex-內部取用" class="header-anchor">#</a> vuex 內部取用</h4> <p>不同於 <code>computed</code> 可以直接使用 <code>this</code> 來指向 <code>data</code> ，在 vuex 內部的 <code>getters</code> 是需要加上參數才能指向 <code>state</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">getters</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function">getState</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> state<span class="token punctuation">.</span>test<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="情境題"><a href="#情境題" class="header-anchor">#</a> 情境題</h4> <p><strong>當你需要保留本地的 <code>computed</code> 又需要引入多個 <code>state</code>時</strong>
+你可以使用[[object-rest-spread]] 將透過 <code>mapState</code> 取得的<code>state</code>延展開</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function-variable function">test</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>local<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		<span class="token comment">//...</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>直接存入<code>data</code> 或是用<code>computed</code>差在哪？</strong></p> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token comment">//1.直接將`store`內的值，存在`data`內(==不建議使用==)</span>
+	<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span><span class="token punctuation">{</span>
+			<span class="token literal-property property">local</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>test<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token comment">//2.透過`computed,methods`修改`data`的值</span>
+	<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span>
+		<span class="token function-variable function">test</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>test
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+</code></pre></div><hr> <h3 id="getters"><a href="#getters" class="header-anchor">#</a> Getters</h3> <p>當需要針對資料進行處理（像是篩選特定待辦清單）時，以 vue 來說就很理所當然是使用 <code>computed</code> ，<strong>但如果這個處理會發生在多個頁面時，為了減少重複計算撰寫，就可以考慮改寫在<code>getters</code>作為全域計算。</strong></p> <p><code>getters</code> 有兩個參數，分別是<strong>state</strong>以及<strong>getters</strong>（名稱不能更改）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">getters</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function">test</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>getters</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token comment">//透過state指向vuex內的state</span>
+		<span class="token keyword">return</span> state<span class="token punctuation">.</span>obj
+		<span class="token comment">//透過 getters,取得其他getters的結果</span>
+		<span class="token keyword">return</span> getters<span class="token punctuation">.</span>doneTodos <span class="token operator">+</span> state<span class="token punctuation">.</span>obj
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="元件取用-2"><a href="#元件取用-2" class="header-anchor">#</a> 元件取用</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//單一資料取法: 透過 this 去指向vuex</span>
+<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function-variable function">getVuexStore</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters<span class="token punctuation">.</span><span class="token punctuation">[</span>gettersName<span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//多筆資料取法: 透過 vuex 內建的 map 系列方法</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>mapGetters<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+
+<span class="token comment">//有兩種取法</span>
+<span class="token comment">//1.陣列形式，getters為字串形式</span>
+<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'getters1'</span><span class="token punctuation">,</span><span class="token string">'getters2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">//2.物件形式：當你想為引入getters 根據 local 再次命名時</span>
+<span class="token literal-property property">computed</span><span class="token operator">:</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token literal-property property">newName</span><span class="token operator">:</span><span class="token string">'getters'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="vuex-內部使用"><a href="#vuex-內部使用" class="header-anchor">#</a> vuex 內部使用</h4> <h4 id="與-computed-的差異-傳入其他參數"><a href="#與-computed-的差異-傳入其他參數" class="header-anchor">#</a> 與 <code>computed</code> 的差異 -- 傳入其他參數</h4> <hr> <h3 id="mutations"><a href="#mutations" class="header-anchor">#</a> Mutations</h3> <p>vuex 儲存的不論邏輯、狀態，都是「全域」等級(application-level)，事件也不例外，自己現在所知的全域事件如下：</p> <div class="language- extra-class"><pre class="language-text"><code>//點擊X按鈕關閉視窗
+//呼叫API
+//驗證使用者身份
+</code></pre></div><p>在 vuex 是將全域事件存放在 <code>mutation</code>，其使用方法如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">mutations</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token function">increase</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>payload</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token comment">//state =&gt; vuex 的 state</span>
+		state<span class="token punctuation">.</span>count<span class="token operator">+=</span>payload
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>當你觸發事件同時需要攜帶參數時，可以透過<code>payload</code>傳遞</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//component</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increase'</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">//vuex</span>
+<span class="token function">increase</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span>payload</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token comment">//payload =&gt; 10(payload可以是任何形式資料：10,{name:'andy'} ...)</span>
+		<span class="token comment">//state =&gt; vuex 的 state</span>
+		state<span class="token punctuation">.</span>count<span class="token operator">+=</span>payload
+	<span class="token punctuation">}</span>
+</code></pre></div><h4 id="元件使用"><a href="#元件使用" class="header-anchor">#</a> 元件使用</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//單一使用</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'mutationName'</span><span class="token punctuation">,</span>payload<span class="token punctuation">)</span>
+
+<span class="token comment">//引入多個vuex方法</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>mapMutations<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+
+<span class="token literal-property property">methods</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token comment">//不需另外命名引入</span>
+	<span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'mutationName1'</span><span class="token punctuation">,</span><span class="token string">'mutationName2'</span><span class="token punctuation">,</span><span class="token string">'mutationName3'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token comment">//需另外命名引入</span>
+	<span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">add</span><span class="token operator">:</span><span class="token string">'mutationName1'</span><span class="token punctuation">,</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p><strong>特別注意</strong>：<code>mutation</code> 只能用來處理同步事情，請勿用來呼叫 API</p></blockquote> <hr> <h3 id="actions"><a href="#actions" class="header-anchor">#</a> Actions</h3> <ol><li>避免透過 <code>actions</code> 直接修改 <code>state</code>內的值，而是需要透過呼叫<code>mutation</code>來修改。</li> <li>可進行非同步處理( asynchronous operations)</li></ol> <p><strong>action syntax</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//用來呼叫mutation內的方法</span>
+<span class="token number">1</span><span class="token punctuation">.</span>context<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span>
+
+<span class="token comment">//用來取得getter內的值</span>
+<span class="token number">2</span><span class="token punctuation">.</span>cotext<span class="token punctuation">.</span><span class="token function">getters</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span>
+
+<span class="token comment">//取得state內的值，會回傳一個proxy物件</span>
+<span class="token number">3</span><span class="token punctuation">.</span>context<span class="token punctuation">.</span><span class="token function">state</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span>
+
+<span class="token comment">//在action內呼叫多個方法</span>
+<span class="token number">4</span><span class="token punctuation">.</span>context<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>注意:這邊的<code>context</code>雖然是一個<code>object</code>，但並不等於 vuex 實例，只是能取得相同的方法跟屬性。</p></blockquote> <h4 id="use-argument-destructuring"><a href="#use-argument-destructuring" class="header-anchor">#</a> use [argument destructuring]</h4> <p>當你需要呼叫<code>commit</code>很多次時</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token function">increment</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//increment是mutation的方法</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="dispatching-actions"><a href="#dispatching-actions" class="header-anchor">#</a> Dispatching Actions</h4> <ol><li>透過<code>store.dispatch(&quot;xxx&quot;)</code>來呼叫</li> <li>如同前面提及，<code>actions</code><strong>可處理非同步的情境</strong>，像是<code>setTimeout等</code></li></ol> <div class="language-javascript= extra-class"><pre class="language-text"><code>useAsyncDeal(context){
+      setTimeout(()=&gt;{
+        context.commit(&quot;increment&quot;);
+        console.log(&quot;setTimeout excuted&quot;);
+      },1000)
+    }
+</code></pre></div><p><code>store.dispatch()</code>也同樣支援：</p> <ol><li><code>payload format</code></li> <li><code>object style dispatch</code></li></ol> <div class="language-javascript= extra-class"><pre class="language-text"><code>//1.payload format
+store.dispatch(&quot;xxx&quot;,10/{amount:10});
+
+//2.obj style
+store.dispatch({
+    type:'xxx', //type預設就是要執行的action
+    amount:10 //amount預設就是要透過payload傳遞的內榮
+});
+</code></pre></div><h4 id="dispatching-actions-in-components"><a href="#dispatching-actions-in-components" class="header-anchor">#</a> Dispatching Actions in Components</h4> <p>你也可各別引入元件中：</p> <ol><li><code>this.$store.dispatch(&quot;xxx&quot;)</code></li> <li>在<code>methods</code>中裝入<code>mapActions</code></li></ol> <p>例如今天某個元件內<code>methods</code>使用：</p> <div class="language-javascript= extra-class"><pre class="language-text"><code>methods: {
+    addCount() {
+      //1.直接呼叫
+      this.$store.dispatch(&quot;modifyDirectly&quot;);
+    },
+    //2.使用mapActions整包引入
+    //
+    //裝進陣列的方法:只能使用原本的名稱
+    ...mapActions([&quot;modifyDirectly&quot;, &quot;sample1&quot;, &quot;sample2&quot;]),
+    //裝進物件的方法:可以另外命名
+    ...mapActions({useInThere:'modifyDirectly'}),
+  },
+</code></pre></div><h3 id="composing-actions"><a href="#composing-actions" class="header-anchor">#</a> Composing Actions</h3> <p>除了<strong>能否處理非同步</strong>的差異外，在這進一步說明它的功能。</p> <blockquote><p>store.dispatch can handle Promise returned by the triggered action handler and it also returns Promise</p></blockquote> <p>意思是指<code>store.dispatch()</code>這個操作以及回傳 <code>promise</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//透過.then的方式來確保執行順序、內容</span>
+store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&quot;actionA&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="解析-doc-範例"><a href="#解析-doc-範例" class="header-anchor">#</a> 解析 doc 範例</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">actionA</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//當payload的getData完成時，呼叫mutation的gotData</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'gotData'</span><span class="token punctuation">,</span> <span class="token keyword">await</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">async</span> <span class="token function">actionB</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> dispatch<span class="token punctuation">,</span> commit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">await</span> <span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'actionA'</span><span class="token punctuation">)</span> <span class="token comment">// wait for `actionA` to finish</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'gotOtherData'</span><span class="token punctuation">,</span> <span class="token keyword">await</span> <span class="token function">getOtherData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><hr> <h3 id="module"><a href="#module" class="header-anchor">#</a> Module</h3> <p>在<strong>module</strong>內使用的<code>getters</code>,<code>mutations</code>,甚至是<code>action</code>的<code>context.state</code>，參數都會優先指向模組內的<code>state</code></p> <p><strong>實例</strong><br>
+當實例跟模組的<code>state</code>內同時都有<code>name</code>的變數值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//主vuex</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;Andy&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">getName</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">map</span><span class="token operator">:</span> mapData<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//模組</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> mapData <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;Leo&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//   state: () =&gt; {},</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>如同文件所說，會優先指向模組<code>state</code>內的<code>name</code></p> <p>如果要取得實例的<code>state</code>，可使用，<code>context.rootState</code></p> <p>QA:<br>
+什麼情境下會使用<code>context.rootState</code></p> <blockquote><p>By default, actions and mutations are still registered under the global namespace</p></blockquote> <p>即便參數會指向模組內，<strong>在模組內的<code>actions</code>,<code>mutations</code>，可取用預設範圍仍為全域而非模組</strong>怎辦？</p> <p>解決方式就是在模組內加入：<code>namespaced: true</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">getters</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">actions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//新增namespaced</span>
+    <span class="token literal-property property">namespaced</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>想在模組內取得全域的<code>action</code>，你需要：</p> <p>在該<code>action</code>內加入<code>root:true</code></p> <p>接著將要使用的<code>action</code>裝入<code>handler</code>函式內</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">action</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">someAction</span><span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">root</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">nameSpaceContext<span class="token punctuation">,</span>padyload</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">.8</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h3 id="參考資料"><a href="#參考資料" class="header-anchor">#</a> 參考資料</h3> <ol><li><a href="https://vuex.vuejs.org/" target="_blank" rel="noopener noreferrer">Vuex-doc<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol> <hr> <h2 id="props"><a href="#props" class="header-anchor">#</a> props</h2> <h3 id="定義方式"><a href="#定義方式" class="header-anchor">#</a> 定義方式</h3> <div class="language-javascript= extra-class"><pre class="language-text"><code>
+//可以是array,obj
+props:{title:String,}
+props:['title']
+</code></pre></div><h4 id="prop-casing"><a href="#prop-casing" class="header-anchor">#</a> prop casing</h4> <p>HTML 屬性名稱不區分大小寫，在 script 中用小駝峰命名法引入的 props，在 HTML template 上需要使用 kebab-cased 的寫法</p> <div class="language-javascript= extra-class"><pre class="language-text"><code>// camelCase in JavaScript
+  props: ['postTitle'],
+
+ &lt;!-- kebab-case in HTML --&gt;
+&lt;blog-post post-title=&quot;hello!&quot;&gt;&lt;/blog-post&gt;
+</code></pre></div><h3 id="單向資料流"><a href="#單向資料流" class="header-anchor">#</a> 單向資料流</h3> <ul><li>資料一般定義在父元件，子元件只做接收和顯示資料</li> <li>父元件的資料一更新，子元件內所有使用的 props 會自動更新</li> <li>不在子元件內修改 props ( console 會出現警告)</li></ul> <hr> <h2 id="v-model"><a href="#v-model" class="header-anchor">#</a> v-model</h2> <h3 id="在-v-model-出現前"><a href="#在-v-model-出現前" class="header-anchor">#</a> 在 <code>v-model</code> 出現前：</h3> <p>在網頁世界中，取得欄位內容(ex :<code>input</code>)是重要、常見的功能，在原生 <em>JavaScript</em>，你會需要透過：</p> <ol><li>選到元素： <code>document.querySelector()</code></li> <li>監聽元素的行為 <code>addEventListener()</code></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//選到元素</span>
+<span class="token keyword">const</span> inputEle <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">&quot;.test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//監聽元素的行為</span>
+inputEle<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;inputing&quot;</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><s>是不是很難用</s>，那我們來看看框架的好了</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>input
+type<span class="token operator">=</span><span class="token string">'text'</span>
+<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">'detectValue'</span>
+@input<span class="token operator">=</span><span class="token string">'event =&gt; detectValue = event.target.value'</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><p>上面的行為其實就是：**監聽使用者在表單輸入的值，拿來更新<code>value</code> **，不過你還有更簡潔的方法做到這件事，就是使用 <code>v-model</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;detectValue&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><p>所以我們可以知道 <code>v-model</code> 的重要功能：做到同步更新表單內的值。</p> <br> <h3 id="關於-v-model"><a href="#關於-v-model" class="header-anchor">#</a> 關於 v-model</h3> <p>你可以先知道：</p> <ol><li><p>它能用在 <code>input</code> ,<code>select</code>,<code>textarea</code>等元素上</p></li> <li><p>當你使用 <code>v-model</code> 監控 <code>input</code> 時，內部設定的 <code>value</code> 會被無視</p> <blockquote><p><code>&lt;input value='initial'(not work) v-model='test'/&gt;</code></p></blockquote></li> <li><p>它在不同元素、屬性下，<strong>==會建議搭配不同事件==（ex: <code>change</code>, <code>input</code>）</strong></p></li></ol> <p><strong><code>input type='checkbox'</code></strong>
+當你 <code>v-model</code> 綁定的是一個字串時：</p> <ol><li>回傳值(default)：<code>true</code> / <code>false</code>，
+<blockquote><p>可以透過 <code>true/fasle-value</code> 自定義回傳值</p></blockquote></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'checkbox'</span>  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'sample'</span><span class="token punctuation">,</span>
+		<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span><span class="token punctuation">{</span>
+			<span class="token literal-property property">detect</span><span class="token operator">:</span><span class="token string">'andy'</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>值可以透過 <code>true-value</code> 自定義內容，或是<strong>加上 <code>v-bind</code> 產生動態的自定義內容</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input <span class="token boolean">true</span><span class="token operator">-</span>value<span class="token operator">=</span><span class="token string">'customize'</span> type<span class="token operator">=</span><span class="token string">'checkbox'</span>  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input <span class="token operator">:</span><span class="token boolean">true</span><span class="token operator">-</span>value<span class="token operator">=</span><span class="token string">'dynamicCustomize'</span> type<span class="token operator">=</span><span class="token string">'checkbox'</span>  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'sample'</span><span class="token punctuation">,</span>
+		<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span><span class="token punctuation">{</span>
+			<span class="token literal-property property">detect</span><span class="token operator">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+			<span class="token literal-property property">dynamicCustomize</span><span class="token operator">:</span><span class="token string">'anyThing'</span>
+		<span class="token punctuation">}</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><blockquote><p>需要注意： <code>true/false-value</code> 在<code>v-model</code> 監聽的變數為<code>[]</code> 時，優先度低於預設 <code>value</code></p></blockquote> <p>當你綁定一個<code>[]</code></p> <ol><li>使用單一變數作為多個輸入欄位的監測變數如下：</li> <li>modelValue 的原始型別為 <code>[]</code></li> <li>回傳值不再是 <code>true/false</code></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+
+	<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'checkbox'</span> value<span class="token operator">=</span><span class="token string">'andy'</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'checkbox'</span> value<span class="token operator">=</span><span class="token string">'rex'</span>  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'checkbox'</span> value<span class="token operator">=</span><span class="token string">'angela'</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">'checkbox'</span> value<span class="token operator">=</span><span class="token string">'wendy'</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">'detect'</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'sample'</span><span class="token punctuation">,</span>
+		<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span><span class="token punctuation">{</span>
+			<span class="token literal-property property">detect</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">//當你全選時會是：['andy','rex'..etc]</span>
+		<span class="token punctuation">}</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p><code>select</code></p> <h3 id="用-v-model-監聽元件"><a href="#用-v-model-監聽元件" class="header-anchor">#</a> 用 v-model 監聽元件</h3> <p>https://ithelp.ithome.com.tw/articles/10268187</p> <p>v-model + computed(get + set)
+今天我們希望對 <code>v-model</code> 監聽的值多做一些處理，你可能會想到，把它拆分成兩個部分</p> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token operator">&lt;</span>InputElement <span class="token operator">:</span>modelValue<span class="token operator">=</span><span class="token string">'selected'</span> @update<span class="token operator">:</span>modelValue<span class="token operator">=</span>handler <span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><p>但這樣有兩個可改進的部分：</p> <ol><li>可讀性</li> <li>要多寫一個<code>methods</code></li></ol> <hr> <h2 id="操作-slot-插槽"><a href="#操作-slot-插槽" class="header-anchor">#</a> 操作 <code>slot</code> 插槽</h2> <p>在開始之前，先來回顧一下上面已知道的</p> <blockquote><p>因為編譯作用域的關係，父元件無法影響子元件的內容</p></blockquote> <p><code>slot</code> 在官方文件稱為『插槽』，<strong>讓你可以在元件內產生一個空間</strong>，它有以下特色：</p> <ol><li>內容是透過父元件傳入子元件內。</li> <li><strong>傳入內容優先度大於 <code>slot</code> 的預設內容</strong></li></ol> <h3 id="不具名插槽"><a href="#不具名插槽" class="header-anchor">#</a> 不具名插槽</h3> <div class="language-js extra-class"><pre class="language-js"><code>
+</code></pre></div><br> <h3 id="具名插槽"><a href="#具名插槽" class="header-anchor">#</a> 具名插槽</h3> <p>你有想過，當今天元件內插槽數量超過一個時如何正確插入嗎？這時候就需要幫插槽命名來產生所謂的<strong>具名插槽</strong>。例如你今天分別想將不同內容插入 header / main / footer 三個不同內的 slot</p> <p><strong>命名方式</strong>：
+在 slot 標籤內加上 <code>name</code> 的屬性</p> <div class="language-html extra-class"><pre class="language-html"><code>//子元件結構
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>header<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>i am default header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>'i am default main'<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>傳入方式</strong> ：
+在父層透過 <code>v-slot:[name]</code> 來指定要傳入的插槽位置，例如想隨意加入內容到 header 的 slot 內：</p> <div class="language-html extra-class"><pre class="language-html"><code>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>custom-component</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>'header'</span><span class="token punctuation">&gt;</span></span>
+		... 你想加入的內容
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>custom-component</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><blockquote><p>注意：</p> <ol><li><strong>具名插槽 <code>v-slot</code> 一定要搭配 <code>&lt;template&gt;</code> 使用</strong></li> <li><code>v-slot:[&quot;name&quot;]</code> 可以簡寫為<code>#[name]</code></li> <li>如果 <code>slot</code> 沒有命名，預設會將它名稱為 <code>default</code></li></ol></blockquote> <br> <h4 id="新增並取得子元件屬性"><a href="#新增並取得子元件屬性" class="header-anchor">#</a> 新增並取得子元件屬性</h4> <p>除了<code>name</code> 以外， <code>slot</code> 元件上還能加上其他自定義屬性，可以提供給父元件取用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>slot name<span class="token operator">=</span><span class="token string">&quot;son&quot;</span> forFather<span class="token operator">=</span><span class="token string">&quot;87&quot;</span> <span class="token operator">:</span>forTest<span class="token operator">=</span><span class="token string">&quot;testText&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>slot<span class="token operator">&gt;</span>
+</code></pre></div><p>取用的方法就是在 <code>v-slot</code> 後面加上 <code>={[屬性名稱]}</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template #son<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>屬性名稱<span class="token number">1</span><span class="token punctuation">,</span>屬性名稱<span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+	<span class="token punctuation">{</span><span class="token punctuation">{</span>屬性名稱<span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token comment">//87</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="slots"><a href="#slots" class="header-anchor">#</a> $slots</h3> <p>在子元件，可以透過</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$slots<span class="token punctuation">[</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//印出父元件透過slot傳來的資訊</span>
+</code></pre></div><h3 id="動態切換插槽"><a href="#動態切換插槽" class="header-anchor">#</a> 動態切換插槽</h3> <p><code>v-slot:[variabel]</code></p> <p>透過變換 <code>variable</code> 來調整顯示內容</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6bbf80a7.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/37.129a7cf8.js" defer></script>
+  </body>
+</html>

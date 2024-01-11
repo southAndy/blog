@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tree Shaking | Andy walking</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="try to write some articles">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.6bbf80a7.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/33.707322a4.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.5a81c169.js"><link rel="prefetch" href="/assets/js/23.1a532dfa.js"><link rel="prefetch" href="/assets/js/24.e4cae997.js"><link rel="prefetch" href="/assets/js/25.01cc8187.js"><link rel="prefetch" href="/assets/js/26.30bea54f.js"><link rel="prefetch" href="/assets/js/27.99b715ff.js"><link rel="prefetch" href="/assets/js/28.ed24d7fb.js"><link rel="prefetch" href="/assets/js/29.55f9986e.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/30.d8a766cf.js"><link rel="prefetch" href="/assets/js/31.c5f0745b.js"><link rel="prefetch" href="/assets/js/32.9588f179.js"><link rel="prefetch" href="/assets/js/34.a25d4ed9.js"><link rel="prefetch" href="/assets/js/35.2efcf8b4.js"><link rel="prefetch" href="/assets/js/36.bacece6e.js"><link rel="prefetch" href="/assets/js/37.129a7cf8.js"><link rel="prefetch" href="/assets/js/38.617142bd.js"><link rel="prefetch" href="/assets/js/39.6aa441d2.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Andy walking</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link router-link-active">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link router-link-active">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Bundler</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/archives/fe/bundler/" aria-current="page" class="sidebar-link">Webpack</a></li><li><a href="/archives/fe/bundler/tree-shaking.html" aria-current="page" class="active sidebar-link">Tree Shaking</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tree-shaking"><a href="#tree-shaking" class="header-anchor">#</a> Tree Shaking</h1> <p>引用官網的內文：</p> <blockquote><p>It relies on the <a href="http://exploringjs.com/es6/ch_modules.html#static-module-structure" target="_blank" rel="noopener noreferrer">static structure<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> of ES2015 module syntax</p></blockquote> <p>也就是說 tree-shaking 這個功能是立基在 ESM 上去使用，因為 ESM 具有以下特色：</p> <ol><li>只能放在模組的最上層（動態的 import 除外），假設你希望在特定情境才進行 import</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//錯誤示範</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">&quot;某事發生&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">import</span> useTool <span class="token keyword">from</span> <span class="token string">&quot;../&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//正確示範</span>
+<span class="token keyword">import</span> useTool <span class="token keyword">from</span> <span class="token string">&quot;../&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><ol start="2"><li>import 的模組內容是 <strong>immutable</strong> 的 (可參考：[[mutable &amp; immutable]])</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//a.js</span>
+<span class="token keyword">export</span> <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token comment">//b.js</span>
+<span class="token keyword">import</span> x <span class="token keyword">from</span> <span class="token string">&quot;/a.js&quot;</span><span class="token punctuation">;</span>
+
+x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">//error x is constant variable  即便你本來用 var 宣告都會轉為 const</span>
+</code></pre></div><ol start="3"><li>import 的 module name 不能是動態的（目前理解是 import 路徑不能是動態的）</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//錯誤示範</span>
+<span class="token keyword">const</span> isHome <span class="token operator">=</span> isHome<span class="token operator">?</span><span class="token string">'/page/home.js'</span><span class="token operator">:</span><span class="token string">'/page/other.js'</span>
+
+<span class="token keyword">import</span> Home from isHome
+
+<span class="token comment">//正確示範</span>
+<span class="token keyword">import</span> Home <span class="token keyword">from</span> <span class="token string">&quot;/page/home.js&quot;</span>
+<span class="token keyword">import</span> Other <span class="token keyword">from</span> <span class="token string">&quot;/page/other.js&quot;</span> <span class="token comment">//反正沒用到自然就會被 shaking?</span>
+</code></pre></div><p>而模組化（import）的解析是在 <strong>靜態解析</strong> 階段，在這個階段會做的事情有：</p> <ol><li>變數宣告跟作用域分析：檢測每個作用域內存有哪些變數，等進到執行序時就可快速地去查找</li> <li><strong>分析導入(import)跟導出(export) 的內容</strong></li></ol> <p>這樣方便讓打包工具（如 webpack ）進行後續的分析、優化。</p> <h3 id="實現-tree-shaking-的小技巧"><a href="#實現-tree-shaking-的小技巧" class="header-anchor">#</a> 實現 tree-shaking 的小技巧</h3> <ol><li><p>調整 babel 編譯設定：因為預設編譯會轉為 commonjs 版本，會讓 tree-shaking 失效。</p> <blockquote><p>那為何編譯成 commonjs 版本會失效？</p></blockquote></li> <li><p>export 的模組保持 <strong>原子性</strong>：就是讓輸出的模組內容盡量維持單一、不可變的，這樣才能方便分析，不然一直變動很難分析。</p></li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//各別輸出 (O)</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useTool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">useTool2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">//最後統一輸出 (O)</span>
+<span class="token keyword">function</span> <span class="token function">useTool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">useTool2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> useTool<span class="token punctuation">,</span> useTool2 <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">//非原子的寫法 (X)</span>
+<span class="token keyword">function</span> <span class="token function">useTool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">useTool2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">let</span> useToolList <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">use</span><span class="token operator">:</span> useTool<span class="token punctuation">,</span>
+  <span class="token literal-property property">use2</span><span class="token operator">:</span> useTool2<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h3 id="參考資料"><a href="#參考資料" class="header-anchor">#</a> 參考資料</h3> <p>ref:https://ithelp.ithome.com.tw/articles/10274978</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/archives/fe/bundler/" class="prev router-link-active">
+        Webpack
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6bbf80a7.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/33.707322a4.js" defer></script>
+  </body>
+</html>

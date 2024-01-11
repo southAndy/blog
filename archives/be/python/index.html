@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>python 筆記 | Andy walking</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="try to write some articles">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.6bbf80a7.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/29.55f9986e.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.5a81c169.js"><link rel="prefetch" href="/assets/js/23.1a532dfa.js"><link rel="prefetch" href="/assets/js/24.e4cae997.js"><link rel="prefetch" href="/assets/js/25.01cc8187.js"><link rel="prefetch" href="/assets/js/26.30bea54f.js"><link rel="prefetch" href="/assets/js/27.99b715ff.js"><link rel="prefetch" href="/assets/js/28.ed24d7fb.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/30.d8a766cf.js"><link rel="prefetch" href="/assets/js/31.c5f0745b.js"><link rel="prefetch" href="/assets/js/32.9588f179.js"><link rel="prefetch" href="/assets/js/33.707322a4.js"><link rel="prefetch" href="/assets/js/34.a25d4ed9.js"><link rel="prefetch" href="/assets/js/35.2efcf8b4.js"><link rel="prefetch" href="/assets/js/36.bacece6e.js"><link rel="prefetch" href="/assets/js/37.129a7cf8.js"><link rel="prefetch" href="/assets/js/38.617142bd.js"><link rel="prefetch" href="/assets/js/39.6aa441d2.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Andy walking</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Python</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/archives/be/python/" aria-current="page" class="active sidebar-link">python 筆記</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python-筆記"><a href="#python-筆記" class="header-anchor">#</a> python 筆記</h1> <h2 id="關於套件"><a href="#關於套件" class="header-anchor">#</a> 關於套件</h2> <p>如同前端開發者可以使用 yarn, npm 去進行套件管理，python 也有許多套件可使用，在 python 可以使用 pip , conda</p> <blockquote><p>pip 是 python 內建的工具，不需要額外下載</p></blockquote> <h3 id="下載套件"><a href="#下載套件" class="header-anchor">#</a> 下載套件</h3> <p>例如我們想要下載 beautful-soup 進入專案</p> <div class="language-terminal extra-class"><pre class="language-text"><code>pip install beautifulsoup4
+</code></pre></div><h3 id="使用套件"><a href="#使用套件" class="header-anchor">#</a> 使用套件</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> Beautifulsoup4
+</code></pre></div><h3 id="另一個選擇-poetry"><a href="#另一個選擇-poetry" class="header-anchor">#</a> 另一個選擇 poetry</h3> <p>https://blog.kyomind.tw/python-poetry/</p> <hr> <h2 id="基本語法"><a href="#基本語法" class="header-anchor">#</a> 基本語法</h2> <p><strong>如何加入註解</strong>
+在 python 使用 <code>#</code> 作為註解符號</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 當作註解</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="型別"><a href="#型別" class="header-anchor">#</a> 型別</h2> <p>目前已知有以下型別：</p> <ol><li>字串</li> <li>整數</li> <li>浮點數</li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 注意</span>
+intNum <span class="token operator">=</span> <span class="token number">1</span>
+flotNum <span class="token operator">=</span> <span class="token number">1.5</span>
+
+<span class="token builtin">type</span><span class="token punctuation">(</span>intNum<span class="token punctuation">)</span> <span class="token comment"># int</span>
+<span class="token builtin">type</span><span class="token punctuation">(</span>floatNum<span class="token punctuation">)</span> <span class="token comment">#float</span>
+</code></pre></div><ol start="4"><li><strong>複數</strong></li> <li>布林值</li> <li>列表</li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#基本存值</span>
+data<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+
+<span class="token comment">#清除多欄位內容：以下面來說就是清除 inde 0 - 3 都是 []</span>
+data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token comment">#從資料尾端新增內容</span>
+data<span class="token operator">=</span>data<span class="token operator">+</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">#從頭加入: insert(index,value)</span>
+data<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span>
+
+<span class="token comment">#取得列表總長</span>
+<span class="token builtin">len</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+</code></pre></div><ol start="7"><li>tuple</li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#操作跟 list 相同，差別是 tuple 內的資料不能修改</span>
+tuple_data<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span>
+tuple_data<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">#會報錯</span>
+
+<span class="token comment">#取得列表長度</span>
+<span class="token builtin">len</span><span class="token punctuation">(</span>tuple_data<span class="token punctuation">)</span>
+
+<span class="token comment">#解構：需賦予變數承接內容</span>
+a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c <span class="token operator">=</span> tuple_data
+</code></pre></div><ol start="8"><li>集合
+特性為：<strong>無順序、無重複</strong></li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#集合</span>
+<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">}</span> <span class="token comment">#O</span>
+<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">}</span> <span class="token comment">#X</span>
+</code></pre></div><ol start="8"><li>字典</li></ol> <div class="language-python extra-class"><pre class="language-python"><code>dic <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'name'</span><span class="token punctuation">:</span><span class="token string">'andy'</span><span class="token punctuation">,</span><span class="token string">'age'</span><span class="token punctuation">:</span><span class="token number">9</span><span class="token punctuation">}</span>
+dic<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token comment">#andy</span>
+</code></pre></div><h3 id="辨識型別方法"><a href="#辨識型別方法" class="header-anchor">#</a> 辨識型別方法</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 假設要辨識 data</span>
+data <span class="token operator">=</span> <span class="token string">'i am string'</span>
+<span class="token builtin">type</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+
+</code></pre></div><hr> <h2 id="運算子"><a href="#運算子" class="header-anchor">#</a> 運算子</h2> <p>數學運算
+布林運算</p> <hr> <h2 id="流程控制"><a href="#流程控制" class="header-anchor">#</a> 流程控制</h2> <p>最常見的：</p> <ol><li><code>if else</code></li> <li>三元判斷</li> <li>多個條件同時成立時 <code>and</code></li> <li>其一成立即可 <code>or</code></li> <li>不是時成立 <code>not</code></li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># if .. else</span>
+data <span class="token operator">=</span> true
+<span class="token keyword">if</span> data<span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'is true!'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'not! is false'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 三元</span>
+
+
+<span class="token comment"># and</span>
+<span class="token keyword">if</span> a <span class="token keyword">and</span> b<span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'both success!'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># or</span>
+<span class="token keyword">if</span> a <span class="token keyword">or</span> b<span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'one is true!'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># not</span>
+<span class="token keyword">if</span> <span class="token keyword">not</span> a<span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'not !'</span><span class="token punctuation">)</span>
+</code></pre></div><hr> <h2 id="定義函式"><a href="#定義函式" class="header-anchor">#</a> 定義函式</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">functionName</span><span class="token punctuation">(</span>arg<span class="token punctuation">,</span>arg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># function contents ...</span>
+</code></pre></div><h2 id="如何存入變數"><a href="#如何存入變數" class="header-anchor">#</a> 如何存入變數</h2> <p>直接產生一個變數名稱，並且賦予值</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#直接取一個名稱</span>
+data <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+</code></pre></div><p>修改變數內的值：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#初始值為1</span>
+data<span class="token operator">=</span><span class="token number">1</span>
+
+<span class="token comment">#修改變數值</span>
+data<span class="token operator">=</span><span class="token number">3</span>
+</code></pre></div><h2 id="內建方法"><a href="#內建方法" class="header-anchor">#</a> 內建方法</h2> <h3 id="urllib"><a href="#urllib" class="header-anchor">#</a> urllib</h3> <p>python 內建函式庫的模組，用於處理 URL 相關的操作，常見的操作有：</p> <ol><li>發送 http 請求</li> <li>處理 url 解析</li></ol> <p>使用方式：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request
+
+targetUrl <span class="token operator">=</span> <span class="token string">'https://sample.com'</span>
+response <span class="token operator">=</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>targetUrl<span class="token punctuation">)</span>
+
+html <span class="token operator">=</span> response<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#讀取回應</span>
+</code></pre></div><hr> <h2 id="爬蟲"><a href="#爬蟲" class="header-anchor">#</a> 爬蟲</h2> <h3 id="資源"><a href="#資源" class="header-anchor">#</a> 資源:</h3> <ol><li>https://hackmd.io/@NCHUIT/1101223#Python-%E7%B6%B2%E8%B7%AF%E7%88%AC%E8%9F%B2</li> <li>https://www.youtube.com/watch?v=9Z9xKWfNo7k&amp;list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&amp;index=19</li></ol> <h3 id="beautiful-soup"><a href="#beautiful-soup" class="header-anchor">#</a> beautiful-soup</h3> <p>在這邊範例是使用 requests 套件取得網頁架構</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> requests
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+
+url <span class="token operator">=</span> <span class="token string">'https/目標網址'</span>
+response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+
+<span class="token comment"># 使用 bs4 解析網頁</span>
+content <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>repsonse<span class="token punctuation">.</span>text<span class="token punctuation">,</span><span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+</code></pre></div><p>假設我們取得的網頁架構如下：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>h1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="尋找特定架構的內容"><a href="#尋找特定架構的內容" class="header-anchor">#</a> 尋找特定架構的內容</h4> <p>承上面的程式碼，例如你想要取得 h1 的內容要如何做到？</p> <div class="language-python extra-class"><pre class="language-python"><code>
+</code></pre></div><h3 id="兩者比較"><a href="#兩者比較" class="header-anchor">#</a> 兩者比較</h3> <p>![[Pasted image 20230526175928.png]]</p> <h3 id="反爬蟲"><a href="#反爬蟲" class="header-anchor">#</a> 反爬蟲</h3> <p>檢查請求 (request) 的 Header
+登入功能頁面的輸入驗證碼</p> <hr></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6bbf80a7.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/29.55f9986e.js" defer></script>
+  </body>
+</html>

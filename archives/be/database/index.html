@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>[MongoDB] mongoDB 學習筆記 | Andy walking</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="try to write some articles">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.6bbf80a7.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/26.30bea54f.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.5a81c169.js"><link rel="prefetch" href="/assets/js/23.1a532dfa.js"><link rel="prefetch" href="/assets/js/24.e4cae997.js"><link rel="prefetch" href="/assets/js/25.01cc8187.js"><link rel="prefetch" href="/assets/js/27.99b715ff.js"><link rel="prefetch" href="/assets/js/28.ed24d7fb.js"><link rel="prefetch" href="/assets/js/29.55f9986e.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/30.d8a766cf.js"><link rel="prefetch" href="/assets/js/31.c5f0745b.js"><link rel="prefetch" href="/assets/js/32.9588f179.js"><link rel="prefetch" href="/assets/js/33.707322a4.js"><link rel="prefetch" href="/assets/js/34.a25d4ed9.js"><link rel="prefetch" href="/assets/js/35.2efcf8b4.js"><link rel="prefetch" href="/assets/js/36.bacece6e.js"><link rel="prefetch" href="/assets/js/37.129a7cf8.js"><link rel="prefetch" href="/assets/js/38.617142bd.js"><link rel="prefetch" href="/assets/js/39.6aa441d2.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Andy walking</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Database</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/archives/be/database/" aria-current="page" class="active sidebar-link">[MongoDB] mongoDB 學習筆記</a></li><li><a href="/archives/be/database/howchose.html" class="sidebar-link">我如何選擇資料庫？</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mongodb-mongodb-學習筆記"><a href="#mongodb-mongodb-學習筆記" class="header-anchor">#</a> [MongoDB] mongoDB 學習筆記</h1> <h3 id="sql-vs-nosql"><a href="#sql-vs-nosql" class="header-anchor">#</a> SQL vs noSQL</h3> <p>sql 指的是關聯式資料庫(relational-database)</p> <h2 id="安裝-mongodb"><a href="#安裝-mongodb" class="header-anchor">#</a> 安裝 mongoDB</h2> <p>依序為以下步驟：</p> <ol><li>透過 brew 安裝 mongoDB</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>brew <span class="token function">install</span> mongodb-community@version
+</code></pre></div><blockquote><p><strong>mongoDB 6.0</strong> 後可使用 <em>homebrew</em> 來安裝</p></blockquote> <ol start="2"><li>啟動 mongodb</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>brew services start mongodb-community@6.0
+mongosh
+</code></pre></div><p>可以使用 <code>brew service list</code> 確認當前有哪些資料庫在運行，也能確認 mongodb 是否啟動了。</p> <h2 id="操作指令"><a href="#操作指令" class="header-anchor">#</a> 操作指令</h2> <h3 id="基本操作"><a href="#基本操作" class="header-anchor">#</a> 基本操作</h3> <ol><li><p><code>show dbs</code> 檢視 <strong>本地資料庫數量</strong></p> <p><img src="https://i.imgur.com/PExstL6.png" alt=""></p></li> <li><p><code>use + [dbName]</code> 切換資料庫
+當嘗試切換 不存在的資料庫時，mongodb 會直接幫你建立一個新的資料庫</p> <p><img src="https://i.imgur.com/JXZqS64.png" alt=""></p></li> <li><p><code>show collectios</code> 顯示當前資料庫名稱，如我現在在 <code>test</code> 這個資料庫</p> <p>![[Pasted image 20220926205856.png]]
+<img src="https://i.imgur.com/5yHT8i7.png" alt=""></p></li></ol> <h3 id="資料庫操作"><a href="#資料庫操作" class="header-anchor">#</a> 資料庫操作</h3> <p>我們對資料最常見的操作如所謂的 CRUD，在 mongoDB 也能執行，分別是：</p> <ol><li>insert - (C)</li> <li>find - (R)</li> <li>update - (u)</li> <li>delet - (d)</li></ol> <h3 id="insert"><a href="#insert" class="header-anchor">#</a> insert</h3> <p>有以下幾種方法：</p> <ol><li>儲存單筆資料：document 資料架構可以想成是 javascript 的 object，能將資料以陣列形式存入，但會內容被自動拆成<strong>物件形式</strong>。</li></ol> <p>今天我們將一個資料如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>db.<span class="token punctuation">[</span>資料庫<span class="token punctuation">]</span>.insertOne<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1,2</span>,3<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><p>接著我們讀取這筆資料</p> <div class="language-shell extra-class"><pre class="language-shell"><code>db.<span class="token punctuation">[</span>collectionName<span class="token punctuation">]</span>.find<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ /* <span class="token punctuation">{</span> <span class="token string">'0'</span><span class="token builtin class-name">:</span> <span class="token number">1</span>, <span class="token string">'1'</span><span class="token builtin class-name">:</span> <span class="token number">2</span>, <span class="token string">'2'</span><span class="token builtin class-name">:</span> <span class="token number">3</span>, _id: ObjectId<span class="token punctuation">(</span><span class="token string">&quot;6331a488f7ec354d9cbf0d1e&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">}</span> */
+</code></pre></div><ol start="2"><li>儲存多筆資料：資料須以<strong>陣列格式</strong>傳入</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>db.<span class="token punctuation">[</span>資料庫<span class="token punctuation">]</span>.insertMany<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1,2</span>,3<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h3 id="find"><a href="#find" class="header-anchor">#</a> find</h3> <p>透過以下指令來尋找資料：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>db.<span class="token punctuation">[</span>資料庫<span class="token punctuation">]</span>.find<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="update"><a href="#update" class="header-anchor">#</a> update</h3> <div class="language- extra-class"><pre class="language-text"><code>db.[collectionName].updateOne(&lt;filter&gt;,&lt;update&gt;,{options})
+db.[collectionName].updateMany(&lt;filter&gt;,&lt;update&gt;,{options})
+db.[collectionName].replaceOne(&lt;filter&gt;,&lt;update&gt;,{options})
+</code></pre></div><ol><li>當<code>&lt;filter&gt;</code> 是空值時，會回傳資料庫內第一筆資料進行修改</li> <li><code>options</code> 可以加入像是：資料最後變更日期</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/archives/be/database/howchose.html">
+        我如何選擇資料庫？
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6bbf80a7.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/26.30bea54f.js" defer></script>
+  </body>
+</html>

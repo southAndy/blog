@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>typescript 編譯 | Andy walking</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="try to write some articles">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.6bbf80a7.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/36.bacece6e.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.5a81c169.js"><link rel="prefetch" href="/assets/js/23.1a532dfa.js"><link rel="prefetch" href="/assets/js/24.e4cae997.js"><link rel="prefetch" href="/assets/js/25.01cc8187.js"><link rel="prefetch" href="/assets/js/26.30bea54f.js"><link rel="prefetch" href="/assets/js/27.99b715ff.js"><link rel="prefetch" href="/assets/js/28.ed24d7fb.js"><link rel="prefetch" href="/assets/js/29.55f9986e.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/30.d8a766cf.js"><link rel="prefetch" href="/assets/js/31.c5f0745b.js"><link rel="prefetch" href="/assets/js/32.9588f179.js"><link rel="prefetch" href="/assets/js/33.707322a4.js"><link rel="prefetch" href="/assets/js/34.a25d4ed9.js"><link rel="prefetch" href="/assets/js/35.2efcf8b4.js"><link rel="prefetch" href="/assets/js/37.129a7cf8.js"><link rel="prefetch" href="/assets/js/38.617142bd.js"><link rel="prefetch" href="/assets/js/39.6aa441d2.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Andy walking</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/fe/bundler/" class="nav-link">
+  打包
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/js/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/archives/fe/vuejs/" class="nav-link">
+  vuejs
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="後端" class="dropdown-title"><span class="title">後端</span> <span class="arrow down"></span></button> <button type="button" aria-label="後端" class="mobile-dropdown-title"><span class="title">後端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/archives/be/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/database/" class="nav-link">
+  資料庫
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/crawler/" class="nav-link">
+  爬蟲
+</a></li><li class="dropdown-item"><!----> <a href="/archives/be/python/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><a href="/archives/others/" class="nav-link">
+  其他
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Ts</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/archives/fe/ts/ts-type.html" aria-current="page" class="active sidebar-link">typescript 編譯</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="編譯-typescript"><a href="#編譯-typescript" class="header-anchor">#</a> 編譯 typescript</h2> <h3 id="typescript-編譯配置"><a href="#typescript-編譯配置" class="header-anchor">#</a> typescript 編譯配置</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+	<span class="token string">&quot;target&quot;</span>：<span class="token string">&quot;es3&quot;</span><span class="token punctuation">,</span> <span class="token comment">//指定編譯輸出後的 javascript 程式碼版本</span>
+	<span class="token property">&quot;module&quot;</span><span class="token operator">:</span><span class="token string">&quot;commonjs&quot;</span><span class="token punctuation">,</span> <span class="token comment">//模組化的方式</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+exclude<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">&quot;node_modules&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">//設定要排除被ts編譯的檔案類型（但它只能排除ts內建能識別的檔案），像是圖片檔、樣式檔則需要透過其他方式去排除。</span>
+</code></pre></div><h3 id="目前不支援的編譯內容"><a href="#目前不支援的編譯內容" class="header-anchor">#</a> 目前不支援的編譯內容</h3> <p><strong>ES6 語法</strong></p> <ol><li>block level function declaration</li> <li>proxy</li></ol> <hr> <h2 id="typescript-型別檢測"><a href="#typescript-型別檢測" class="header-anchor">#</a> typescript 型別檢測</h2> <p>typescript 會自動檢測專案內的每行程式碼，其檢測方法可先粗略分為<strong>註記</strong>、<strong>推論</strong>兩種。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">//註記</span>
+<span class="token keyword">let</span> x<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span> <span class="token comment">//直接告訴 ts 這個 x 只能存字串型別的值</span>
+x <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment">//error</span>
+
+<span class="token comment">//推論</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment">//讓ts來判斷變數型別，得到 x 應該 number 的結果</span>
+x <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span> <span class="token comment">//所以當你要再存入其他型別內容，會報錯</span>
+</code></pre></div><blockquote><p>大多時候建議以推論來產生型別，除非資料過於複雜。</p></blockquote> <h3 id="註記"><a href="#註記" class="header-anchor">#</a> 註記</h3> <p>註記還能進一步為<strong>型別註記</strong>跟**型別斷言</p> <p><strong>型別註記</strong>
+簡單條列註記種類，註記可以是型別或 <strong>明確的值</strong>，以下先條列簡單型別</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">//型別註記</span>
+<span class="token keyword">let</span> x<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">//明確值註記</span>
+<span class="token keyword">let</span> x<span class="token operator">:</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>型別斷言</strong>
+以下為斷言兩種寫法</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token operator">&lt;</span><span class="token builtin">number</span><span class="token operator">&gt;</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>註記跟斷言差在哪？</p></blockquote> <h3 id="兩者差異比較"><a href="#兩者差異比較" class="header-anchor">#</a> 兩者差異比較</h3> <p>兩者的差異，以大概念上可以先這樣區分：</p> <ol><li>註記：開發者主動為變數撰寫型別，這個行為產生的型別就是<strong>註記</strong></li> <li>推論：是 typescript 編譯器進行判斷後加上的<strong>型別</strong>，就是所謂的<strong>推論</strong></li></ol> <h3 id="typescript-檢測步驟"><a href="#typescript-檢測步驟" class="header-anchor">#</a> typescript 檢測步驟</h3> <ol><li>推論變數的型別</li> <li>掃描變數可能的型別（還能傳入可能以外的值）</li> <li>存入變數值後確定型別（==不再更動==）</li></ol> <p>看簡單的例子：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">let</span> randomMath<span class="token punctuation">;</span> <span class="token comment">//推論 =&gt; 此時為 any</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  randomMath <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  randomMath <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+randomMath<span class="token punctuation">;</span> <span class="token comment">//掃描變數可能型別(string or number)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6bbf80a7.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/36.bacece6e.js" defer></script>
+  </body>
+</html>
